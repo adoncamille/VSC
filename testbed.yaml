@@ -1,0 +1,14 @@
+devices:
+  nxos1:
+    type: nxos-devnet
+    os: nxos 
+    credentials:
+      default:
+        username: admin
+        password: Tunis123
+    connections:
+      vty:
+        protocol: ssh
+        ip: 192.168.42.101
+        port: 22
+  

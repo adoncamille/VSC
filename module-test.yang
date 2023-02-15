@@ -1,0 +1,21 @@
+module module-test {
+  namespace "http://cisco.com/ns/yang/Cisco-IOS-Native";
+  prefix "module-interfaces";
+  container interfaces {
+    list interface {
+      key name;
+      leaf name {
+        type string;
+      }
+      leaf address {
+        type string;
+      }
+      leaf mask {
+        type string;
+      }
+      leaf state {
+        type boolean;
+      }
+    }
+  }
+}
